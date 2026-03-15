@@ -326,7 +326,7 @@
     opacity: 0.5;
     transform: scale(0.8);
     transition: all 0.3s ease;
-    margin: 0 -5%;
+    margin: 0;
     position: relative;
     z-index: 1;
     display: flex;
@@ -334,13 +334,13 @@
     align-items: center;
   }
 
-  .carousel-slide:first-child {
+  /*.carousel-slide:first-child {
     margin-left: 15%;
   }
 
   .carousel-slide:last-child {
     margin-right: 15%;
-  }
+  }*/
 
   .carousel-slide.active {
     opacity: 1;
@@ -544,13 +544,13 @@
     flex: 0 0 80%;
   }
 
-  .carousel-slide:first-child {
+  /*.carousel-slide:first-child {
     margin-left: 10%;
   }
 
   .carousel-slide:last-child {
     margin-right: 10%;
-  }
+  }*/
 
   .carousel-slide img {
     max-width: 250px;  /* Еще меньше для маленьких экранов */
@@ -562,6 +562,7 @@
 
   .slide-caption {
     max-width: 250px;
+    font-size: 12px;
   }
 
   .card {
