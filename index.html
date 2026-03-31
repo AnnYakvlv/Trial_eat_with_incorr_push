@@ -15,21 +15,37 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-adaptive.css">
   
+  <style>
+    /* Глобальное отключение перетаскивания для всех картинок и ссылок */
+    img, a {
+      user-drag: none;
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+    img {
+      pointer-events: auto;
+      draggable: false;
+    }
+  </style>
 </head>
 <body>
   <header class="header">
     <div class="container header-container">
       <div class="header-left">
-        <img src="images/Group 560.png" alt="logo" class="logo-photo">
+        <img src="images/Group 560.png" alt="logo" class="logo-photo" draggable="false">
         <div class="site-name">Eat!</div>
       </div>
       <div class="store-badges">
-        <img src="images/Group 622.png" alt="apple" class="store-photo">
-        <img src="images/Group 621.png" alt="adroid" class="store-photo">
+        <a href="https://www.apple.com/app-store/" draggable="false">
+          <img src="images/Group 622.png" alt="apple" class="store-photo" draggable="false">
+        </a>
+        <a href="https://play.google.com/store/apps" draggable="false">
+          <img src="images/Group 621.png" alt="adroid" class="store-photo" draggable="false">
+        </a>
       </div>
       <div class="header-right">
-        <a href="#">eatapp@gmail.com</a>
-        <a href="#">eat/t.me</a>
+        <a href="https://mail.google.com/mail/u/0/#inbox">eatapp@gmail.com</a>
+        <a href="https://web.telegram.org/a/#-4821479122">eat.telegram.org</a>
       </div>
     </div>
   </header>
@@ -52,9 +68,9 @@
           <div class="block2-sub">— Приложение, которое объединило лучшее, что есть в мире:</div>
         </div>
         <div class="block2-flex">
-          <img src="images/Blakk.png" alt="tel" class="phone-mock">
+          <img src="images/Blakk.png" alt="tel" class="phone-mock" draggable="false">
           <div class="mascot-area">
-            <img src="images/Group 618.png" alt="mascot" class="mascot-photo">
+            <img src="images/Group 618.png" alt="mascot" class="mascot-photo" draggable="false">
             <div class="mascot-text">Зарабатывайте на посещениях ресторанов и заказе доставки +10% от каждого заказа на ваш счет!</div>
           </div>
         </div>
@@ -69,17 +85,17 @@
         <div class="cards-row">
           <div class="card">
             <div class="card-number">01</div>
-            <img src="images/barcode_scanner.png" alt="bar" class="card-photo">
+            <img src="images/barcode_scanner.png" alt="bar" class="card-photo" draggable="false">
             <div class="card-text">Вы делаете сканирование чека в ресторане</div>
           </div>
           <div class="card">
             <div class="card-number">02</div>
-            <img src="images/Group 585.png" alt="cart" class="card-photo">
+            <img src="images/Group 585.png" alt="cart" class="card-photo" draggable="false">
             <div class="card-text">Заказываете доставку и получаете бонусы</div>
           </div>
           <div class="card">
             <div class="card-number">03</div>
-            <img src="images/Ellipse 71.png" alt="like" class="card-photo">
+            <img src="images/Ellipse 71.png" alt="like" class="card-photo" draggable="false">
             <div class="card-text">Счета 50% при заказе в ресторанах приложения</div>
           </div>
         </div>
@@ -89,8 +105,8 @@
         <div class="bonus-action-wrapper">
           <div class="purple-rect">Копите баллы и оплачивайте ими:</div>
           <div class="two-photos">
-            <img src="images/Group 619.png" alt="40perc" class="small-photo">
-            <img src="images/Group 620.png" alt="50perc" class="small-photo">
+            <img src="images/Group 619.png" alt="40perc" class="small-photo" draggable="false">
+            <img src="images/Group 620.png" alt="50perc" class="small-photo" draggable="false">
           </div>
         </div>
       </div>
@@ -102,22 +118,22 @@
         <div class="block4-title">Наши партнеры:</div>
         <div class="partner-row">
           <div class="partner-card">
-            <img src="images/v368_514.png" alt="5ka" class="partner-photo">
+            <img src="images/v368_514.png" alt="5ka" class="partner-photo" draggable="false">
             <div class="partner-name">Пятерочка</div>
             <div class="partner-time">15-20 мин</div>
           </div>
           <div class="partner-card">
-            <img src="images/v368_523.png" alt="perec" class="partner-photo">
+            <img src="images/v368_523.png" alt="perec" class="partner-photo" draggable="false">
             <div class="partner-name">Перекресток</div>
             <div class="partner-time">25-30 мин</div>
           </div>
           <div class="partner-card">
-            <img src="images/v368_530.png" alt="magn" class="partner-photo">
+            <img src="images/v368_530.png" alt="magn" class="partner-photo" draggable="false">
             <div class="partner-name">Магнит</div>
             <div class="partner-time">1ч.</div>
           </div>
           <div class="partner-card">
-            <img src="images/v368_536.png" alt="lenta" class="partner-photo">
+            <img src="images/v368_536.png" alt="lenta" class="partner-photo" draggable="false">
             <div class="partner-name">Лента</div>
             <div class="partner-time">1-15ч.</div>
           </div>
@@ -138,13 +154,17 @@
           <h3>Скачайте приложение <span>Eat!</span></h3>
           <div class="block5-bonus">За регистрацию в приложении мы дарим <span>300 баллов!</span></div>
           <div class="two-photos-horizontal">
-            <img src="images/Group 622.png" alt="apple" class="store-photo-large">
-            <img src="images/Group 621.png" alt="adroid" class="store-photo-large">
+            <a href="https://www.apple.com/app-store/" draggable="false">
+              <img src="images/Group 622.png" alt="apple" class="store-photo" draggable="false">
+            </a>
+            <a href="https://play.google.com/store/apps" draggable="false">
+              <img src="images/Group 621.png" alt="adroid" class="store-photo" draggable="false">
+            </a>
           </div>
         </div>
         <div class="block5-right">
-          <img src="images/Group 591.png" alt="heart_black" class="mascot-bottom">
-          <img src="images/Mock.png" alt="tel_large" class="phone-mock-right">
+          <img src="images/Group 591.png" alt="heart_black" class="mascot-bottom" draggable="false">
+          <img src="images/Mock.png" alt="tel_large" class="phone-mock-right" draggable="false">
         </div>
       </div>
     </section>
@@ -177,7 +197,7 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-left">
-        <img src="images/Group 560.png" alt="logo" class="logo-photo">
+        <img src="images/Group 560.png" alt="logo" class="logo-photo" draggable="false">
         <div class="site-name">Eat!</div>
       </div>
       <div class="footer-center">
@@ -187,7 +207,7 @@
       </div>
       <div class="footer-right">
         <a href="#">support@eat.ru</a>
-        <a href="#">eat/t.me</a>
+        <a href="https://web.telegram.org/a/#-4821479122">eat.telegram.org</a>
         <a href="#">Политика конфиденциальности</a>
       </div>
       <div class="footer-copyright">©Eat 2026</div>
@@ -197,5 +217,39 @@
   <script src="supabase.js"></script>
   <script src="carousel.js"></script>
   <script src="feedback.js"></script>
+
+  <script>
+    // ПОЛНОЕ ОТКЛЮЧЕНИЕ ПЕРЕТАСКИВАНИЯ КАРТИНОК
+    (function disableDrag() {
+        // Отключаем для всех существующих картинок и ссылок
+        document.querySelectorAll('img, a').forEach(el => {
+            el.setAttribute('draggable', 'false');
+            el.ondragstart = function(e) {
+                e.preventDefault();
+                return false;
+            };
+        });
+        
+        // Глобальный перехватчик для новых элементов
+        window.addEventListener('dragstart', function(e) {
+            if (e.target.tagName === 'IMG' || e.target.tagName === 'A' || e.target.parentElement?.tagName === 'A') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Отключаем выделение изображений
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('selectstart', (e) => e.preventDefault());
+            img.addEventListener('mousedown', (e) => {
+                // Не мешаем нормальным кликам по ссылкам
+                if (!img.closest('a')) {
+                    e.preventDefault();
+                }
+            });
+        });
+    })();
+</script>
+
 </body>
 </html>
