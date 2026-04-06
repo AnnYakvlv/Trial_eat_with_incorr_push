@@ -101,6 +101,9 @@
     .block2-sub {
         font-size: 32px;
     }
+    .two-photos{
+        margin-bottom: 24px;
+    }
 }
 
 /* ОТ 933px ДО 870px */
@@ -233,6 +236,9 @@
     .mascot-area {
         margin-right: 0;
         order: 1;
+    }
+    .two-photos{
+        margin-bottom: 16px;
     }
     
     .carousel-container {
