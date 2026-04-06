@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    max-width: 100%;
     padding: 0;
     overflow-x: hidden;
 }
@@ -405,32 +406,51 @@ body {
 }
 
 .partner-row {
-  display: flex;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    width: 100%;
 }
 
 .partner-card {
-  flex: 1;
-  border-radius: 48px;
-  padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 48px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    min-width: 0; 
 }
 
 .partner-photo {
-  width: 100%;
-  height: 180px;
-  border-radius: 40px;
-  margin-bottom: 30px;
-  object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    display: block;
 }
 
 .partner-name {
-  font-size: 32px;
-  font-weight: 600;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 10px;
+    white-space: nowrap; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none; 
+}
+
+.partner-name::-webkit-scrollbar {
+    display: none;
 }
 
 .partner-time {
-  font-size: 28px;
-  opacity: 0.9;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .carousel-container {
@@ -804,4 +824,6 @@ body {
 .custom-modal-close:hover {
   transform: scale(1.1);
 }
+
+
 
