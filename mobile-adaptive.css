@@ -51,9 +51,7 @@
   }
 
 @media (max-width: 1240px) {
-  
-    
-  
+
     .mascot-bottom {
         position: relative;  /* или static */
         width: 400px;
@@ -66,11 +64,11 @@
       padding-bottom: 24px;
     }
 
-.mascot-photo {
-    margin-right: 32vw;
-    width: 550px;
-    height: auto;
-  }
+    .mascot-photo {
+        margin-right: 32vw;
+        width: 550px;
+        height: auto;
+      }
 
     .mascot-text {
         text-align: left;
@@ -106,6 +104,14 @@
 @media (max-width: 1404px) {
     .bonus-action-wrapper {
         flex-wrap: nowrap;
+    }
+    .two-photos{
+        gap: 24px;
+
+    }
+    .small-photo {
+        width: 200px;
+        height: auto;
     }
    
 }
@@ -162,35 +168,31 @@
   }
 
 @media (max-width: 933px) {
-  .mascot-bottom {
-        position: relative;  /* или static */
-        width: 300px;
-        height: auto;
-        display: block;
-        padding-top: 100px;
-        left: -400px;
-    }
-
-    .phone-mock-right {
-     width: 70vw;  /* 50% от ширины окна браузера */
-    height: 55vw;
-    margin-top: 10vh;
-  }
-
-.mascot-photo {
-    margin-right: 32vw;
-    width: 550px;
-    height: auto;
-  }
-
   .phone-mock {
-    max-width: 60%;
-    padding-top: 31.5vw;
-  }
-
-   
+        width: 60%;
+        max-width: 400px;
+        padding-top: 0;
+    }
+    
+    .mascot-photo {
+        max-width: 350px;
+    }
+    
     .mascot-text {
-        text-align: left;
+        font-size: 24px;
+        padding: 0 20px;
+    }
+    
+    .block2-sub {
+        font-size: 28px;
+    }
+    
+    .block2-title {
+        font-size: 36px;
+    }
+    
+    .block2-title span {
+        font-size: 36px;
     }
     .partner-row {
         grid-template-columns: repeat(2, 1fr);
