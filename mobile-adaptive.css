@@ -152,27 +152,11 @@
 
 
 @media (max-width: 1150px) {
-     .mascot-photo {
-        height: 200px;
-        width: auto;
-    
-    }
-    .mascot-text {
-        text-align: left;
-    }
-
-    
-  .mascot-photo {
-    margin-right: 32vw;
-    width: 550px;
-    height: auto;
-  }
-
      .phone-mock {
-    max-width: 60%;
-    padding-top: 25vw;
-    padding-left: 5vw;
-  }
+        max-width: 60%;
+        padding-top: 5vw;
+        padding-left: 5vw;
+    }
 
   
   }
