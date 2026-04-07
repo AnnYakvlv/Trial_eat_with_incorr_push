@@ -246,40 +246,59 @@
     .footer-copyright {
     top: 17ch;
 }
+    .block2-flex {
+        gap: 30px;
+    }
+    
+    .phone-mock {
+        width: 55%;
+        max-width: 350px;
+    }
+    
+    .mascot-photo {
+        max-width: 300px;
+    }
+    
+    .mascot-text {
+        font-size: 22px;
+    }
+    
+    .block2-sub {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .block2-header {
+        padding-top: 40px;
+    }
+    
     .mascot-bottom {
-        position: relative;  /* или static */
+        position: relative;
         width: 300px;
-        left: -400px;
-        height: auto;
+        left: 0 !important;
+        right: 0 !important;
         margin: 1vh auto;
         display: block;
     }
-
-     .phone-mock-right {
-     width: 70vw;  /* 50% от ширины окна браузера */
-    height: 55vw;
-    margin-top: 10vh;
-  }
-
-  .phone-mock {
-    max-width: 60%;
-    padding-top: 40vw;
-    margin-bottom: 0%;
-    padding-left: 0%;
-
-  }
-
- 
-   .mascot-photo {
-    margin-right: 32vw;
-    width: 550px;
-    height: auto;
-  }
-
- .mascot-area {
-        margin-right: 20px;
+    
+    .phone-mock-right {
+        width: 70vw;
+        height: 55vw;
+        margin-top: 10vh;
+        position: relative;
+        right: 0;
+        left: 0;
+    }
+    
+    .mascot-photo {
+        margin-right: 0;
+        width: 550px;
+        height: auto;
+    }
+    
+    .mascot-area {
+        margin-right: 0;
         order: 1;
-        margin-right: 0%;
     }
     .two-photos{
         margin-bottom: 16px;
